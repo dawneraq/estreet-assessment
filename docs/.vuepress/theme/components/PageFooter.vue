@@ -92,10 +92,8 @@ footer#page-footer
       max-width $leftContentWidth
       .btn
         box-shadow 7px 7px 17px 0px rgba(0,0,0,.1)
-        &:hover
-          background-color $secondaryColor
       .btn-primary
-        background-color lighten($accentColor, 70%)
+        background-color $lightColor
       .btn-secondary
         background-color $accentColor
     #social-media-links > li:not(:last-child)

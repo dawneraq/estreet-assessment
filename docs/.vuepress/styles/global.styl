@@ -1,10 +1,19 @@
 .btn
   border-radius 0
-  border none
+  font-weight bold
+  &:hover
+    background $secondaryColor !important
+    border-color $secondaryColor
+    color white !important
+  &[class*="outline"]
+    border-width 3px
+  &:not([class*="outline"])
+    border none
+    color white
   &.btn-primary
     background $primaryColor
-    color white
-    font-weight 900
-    &:hover
-      background $secondaryColor
-      color white
+  &.btn-light
+    background $lightColor
+
+.theme-default-content .btn-lg
+  box-shadow 7px 7px 17px 0px rgba(0,0,0,.22)

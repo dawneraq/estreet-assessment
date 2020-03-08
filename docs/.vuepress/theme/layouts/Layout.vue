@@ -152,3 +152,7 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+@require '../../styles/global.styl'
+</style>

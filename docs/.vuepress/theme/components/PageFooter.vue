@@ -5,7 +5,6 @@
       <span class="logo">
         Cindy Lerner
       </span>
-      <!-- TODO Override Bootstrap theme colors (using Stylus) -->
       <div class="button-container my-5">
         <a class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold">CONTRIBUTE</a>
         <a class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold">VOLUNTEER</a>
@@ -65,6 +64,15 @@ footer#page-footer
       background lighten($accentColor, 10%)
     .button-container
       width 295px
+      .btn
+        border none
+        box-shadow 7px 7px 17px 0px rgba(0,0,0,.1)
+        &:hover
+          background-color $secondaryColor
+      .btn-primary
+        background-color lighten($accentColor, 70%)
+      .btn-secondary
+        background-color $accentColor
     .footer-nav
       li
         margin-left calc(31px/2)
@@ -81,7 +89,7 @@ footer#page-footer
     .author-link
       opacity 0.3
 
-  a
+  a:not(.btn)
     color white
     opacity 0.76
     &:hover

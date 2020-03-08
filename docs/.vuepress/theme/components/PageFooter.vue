@@ -57,6 +57,7 @@ import FaInstagram from '@theme/components/FaInstagram.vue'
 
 export default {
   name: 'PageFooter',
+
   components: {
     FaFacebook,
     FaTwitter,
@@ -66,7 +67,6 @@ export default {
 </script>
 
 <style lang="stylus">
-
 $leftContentWidth = 295px
 
 footer#page-footer
@@ -101,6 +101,14 @@ footer#page-footer
         background-color $accentColor
     #social-media-links > li:not(:last-child)
       margin-right 13px
+    .fontawesome-container
+      // Setting width and height doesn't work for some reason, so resort to this hacky solution
+      padding-top 10px
+      padding-bottom 10px
+      padding-left 12px
+      padding-right 12px
+      border-radius 50%
+      border 2px solid white
     #footer-nav
       li
         margin-left calc(31px/2)

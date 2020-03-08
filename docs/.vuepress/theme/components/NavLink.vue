@@ -16,16 +16,28 @@
     :rel="rel"
     @focusout="focusoutAction"
   >
-    {{ item.text }}
-    <OutboundLink v-if="isBlankTarget" />
+    <span
+      v-if="!(item.text === 'Facebook' || item.text === 'Twitter')"
+    >
+      {{ item.text }}
+    </span>
+    <FaFacebook v-if="item.text === 'Facebook'"></FaFacebook>
+    <FaTwitter v-if="item.text === 'Twitter'"></FaTwitter>
   </a>
 </template>
 
 <script>
 import { isExternal, isMailto, isTel, ensureExt } from '../util'
+import FaFacebook from '@theme/components/FaFacebook.vue'
+import FaTwitter from '@theme/components/FaTwitter.vue'
 
 export default {
   name: 'NavLink',
+
+  components: {
+    FaFacebook,
+    FaTwitter
+  },
 
   props: {
     item: {

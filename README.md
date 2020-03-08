@@ -8,9 +8,7 @@ Author: Andrew Aquino
 
 ## Description
 
-My new site for Cindy Lerner is built using a static site generator called VuePress. Each page's content is written as a Markdown file, which is then pre-rendered as a fast single-page application.
-
-TODO Add description for Netlify CMS
+My new site for Cindy Lerner is built using a static site generator called VuePress. Each page's content is written as a Markdown file, which is then pre-rendered in a fast single-page application.
 
 ## How to view the site
 
@@ -42,4 +40,4 @@ python -m SimpleHTTPServer
 2. Navigate to the repository path in your terminal.
 3. Run `npm install`
 4. Run `vuepress dev docs`
-5. Open http://0.0.0.0:8080 in a web browser.
+5. Open http://0.0.0.0:8080 in a web browser. This is a live development environment, so the site will reload as you save files.

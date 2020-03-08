@@ -1,7 +1,9 @@
 module.exports = {
-  title: 'Cindy Lerner for Miami-Dade County Commission',
+  // TODO Change title from 'VuePress'
+  // title: 'Cindy Lerner for Miami-Dade County Commission',
   themeConfig: {
     search: false,
+    logo: 'logo-blue.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Meet Cindy', link: '/about/' },
@@ -17,6 +19,8 @@ module.exports = {
       { text: 'Endorsements', link: '/endorsements/' },
       { text: 'Facebook', link: 'http://www.facebook.com/Cindyfordistrict7' },
       { text: 'Twitter', link: 'http://www.twitter.com/CindyforDst7' }
-    ]
+    ],
+    repo: 'https://secure.ngpvan.com/vzmYqShz10Sf6bl63BQOJw2',
+    repoLabel: 'DONATE'
   }
 }

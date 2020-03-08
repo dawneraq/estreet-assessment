@@ -1,10 +1,10 @@
 .btn
   border-radius 0
-.fontawesome-container
-  // Setting width and height doesn't work for some reason, so resort to this hacky solution
-  padding-top 10px
-  padding-bottom 10px
-  padding-left 12px
-  padding-right 12px
-  border-radius 50%
-  border 2px solid white
+  border none
+  &.btn-primary
+    background $primaryColor
+    color white
+    font-weight 900
+    &:hover
+      background $secondaryColor
+      color white

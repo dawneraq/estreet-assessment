@@ -47,6 +47,7 @@ export default {
     #donate-button
       margin-left 20px
       margin-right 20px
+      box-shadow 7px 7px 17px 0px rgba(0,0,0,.22)
   & > .sidebar-links
     padding 1.5rem 0
     & > li > a.sidebar-link

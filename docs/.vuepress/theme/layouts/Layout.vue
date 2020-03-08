@@ -40,6 +40,7 @@
         <slot name="page-bottom" />
       </template>
     </Page>
+    <footer style="background: pink; font-size: 3em">I'M A CUSTOM FOOTER, MAKE ME INTO A COMPONENT</footer>
   </div>
 </template>
 

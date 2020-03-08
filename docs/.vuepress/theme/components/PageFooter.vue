@@ -84,7 +84,7 @@ footer#page-footer
       width 100%
       height 90px
       max-width $leftContentWidth
-      background-image url("/assets/img/logo-white.f7dc4559.png")
+      background-image url("../../public/logo-white.png")
       background-size contain
       background-repeat no-repeat
       background-position center

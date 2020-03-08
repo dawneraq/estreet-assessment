@@ -21,7 +21,7 @@
       </div>
     </div>
     <div>
-      <ul>
+      <ul class="list-unstyled">
         <li><a href="/">Home</a></li>
         <li><a href="/about/">Meet Cindy</a></li>
         <li><a href="/priorities/">Priorities</a></li>

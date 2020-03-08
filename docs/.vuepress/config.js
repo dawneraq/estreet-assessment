@@ -22,5 +22,10 @@ module.exports = {
     ],
     repo: 'https://secure.ngpvan.com/vzmYqShz10Sf6bl63BQOJw2',
     repoLabel: 'DONATE'
+  },
+  markdown: {
+    anchor: {
+      permalinkBefore: false
+    }
   }
 }

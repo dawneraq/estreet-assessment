@@ -1,10 +1,7 @@
 <template>
   <footer id="page-footer" class="row no-gutters">
     <div class="col-12 col-md-4">
-      <!-- TODO Add real logo -->
-      <span class="logo">
-        Cindy Lerner
-      </span>
+      <img src="../../public/logo-white.png" alt="logo" class="logo">
       <div class="button-container my-5">
         <a class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold">CONTRIBUTE</a>
         <a class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold">VOLUNTEER</a>
@@ -70,6 +67,8 @@ export default {
 
 <style lang="stylus">
 
+$leftContentWidth = 295px
+
 footer#page-footer
   background $accentColor
   color white
@@ -82,8 +81,10 @@ footer#page-footer
     height 580px
     &:first-child
       background lighten($accentColor, 10%)
+    .logo
+      width $leftContentWidth
     .button-container
-      width 295px
+      width $leftContentWidth
       .btn
         border none
         box-shadow 7px 7px 17px 0px rgba(0,0,0,.1)

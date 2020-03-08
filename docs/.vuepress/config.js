@@ -7,7 +7,7 @@ module.exports = {
       { text: 'Meet Cindy', link: '/about/' },
       // TODO Modify DropdownLink.vue in theme so that /priorities/ is a clickable link,
       // But also make it so that clicking it once on mobile opens it, then clicking it another time navigates to it
-      { text: 'District Priorities', link: '/priorities/', items: [
+      { text: 'Priorities', link: '/priorities/', items: [
         { text: 'Endless Traffic Gridlock', link: '/endless-traffic-gridlock/' },
         { text: 'Flooding and Rising Seas', link: '/flooding-and-rising-seas/' },
         { text: 'Water Contamination', link: '/water-contamination/' },

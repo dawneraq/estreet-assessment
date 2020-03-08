@@ -9,10 +9,11 @@
         <a class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold">CONTRIBUTE</a>
         <a class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold">VOLUNTEER</a>
       </div>
-      <!-- TODO Turn these into icons -->
       <ul class="social-media-links list-inline">
         <li class="list-inline-item">
-          <a href="http://www.facebook.com/Cindyfordistrict7">Facebook</a>
+          <a href="http://www.facebook.com/Cindyfordistrict7">
+          <FaFacebook></FaFacebook>
+          </a>
         </li>
         <li class="list-inline-item">
           <a href="http://www.twitter.com/CindyforDst7">
@@ -20,7 +21,9 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a href="http://instagram.com/cindyfordistrict7">Instagram</a>
+          <a href="http://instagram.com/cindyfordistrict7">
+            <FaInstagram></FaInstagram>
+          </a>
         </li>
       </ul>
     </div>
@@ -51,12 +54,16 @@
 </template>
 
 <script>
+import FaFacebook from '@theme/components/FaFacebook.vue'
 import FaTwitter from '@theme/components/FaTwitter.vue'
+import FaInstagram from '@theme/components/FaInstagram.vue'
 
 export default {
   name: 'PageFooter',
   components: {
-    FaTwitter
+    FaFacebook,
+    FaTwitter,
+    FaInstagram
   }
 }
 </script>

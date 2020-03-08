@@ -40,7 +40,7 @@
         <slot name="page-bottom" />
       </template>
     </Page>
-    <footer style="background: pink; font-size: 3em">I'M A CUSTOM FOOTER, MAKE ME INTO A COMPONENT</footer>
+    <PageFooter></PageFooter>
   </div>
 </template>
 
@@ -49,6 +49,7 @@ import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
+import PageFooter from '@theme/components/PageFooter.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
@@ -58,7 +59,8 @@ export default {
     Home,
     Page,
     Sidebar,
-    Navbar
+    Navbar,
+    PageFooter
   },
 
   data () {

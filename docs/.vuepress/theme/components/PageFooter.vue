@@ -15,7 +15,9 @@
           <a href="http://www.facebook.com/Cindyfordistrict7">Facebook</a>
         </li>
         <li class="list-inline-item">
-          <a href="http://www.twitter.com/CindyforDst7">Twitter</a>
+          <a href="http://www.twitter.com/CindyforDst7">
+            <FaTwitter></FaTwitter>
+          </a>
         </li>
         <li class="list-inline-item">
           <a href="http://instagram.com/cindyfordistrict7">Instagram</a>
@@ -47,6 +49,17 @@
     </div>
   </footer>
 </template>
+
+<script>
+import FaTwitter from '@theme/components/FaTwitter.vue'
+
+export default {
+  name: 'PageFooter',
+  components: {
+    FaTwitter
+  }
+}
+</script>
 
 <style lang="stylus">
 

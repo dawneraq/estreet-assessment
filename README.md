@@ -41,3 +41,7 @@ python -m SimpleHTTPServer
 3. Run `npm install`
 4. Run `vuepress dev docs`
 5. Open http://0.0.0.0:8080 in a web browser. This is a live development environment, so the site will reload as you save files.
+
+## Notes
+
+Each FontAwesome icon component was written based off of the `getContent` function of https://github.com/HiYue/vuepress-component-font-awesome/blob/master/index.js.

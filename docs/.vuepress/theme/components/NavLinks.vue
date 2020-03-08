@@ -23,12 +23,12 @@
     <a
       v-if="repoLink"
       :href="repoLink"
-      class="repo-link"
+      id="donate-button"
+      class="btn btn-primary repo-link px-5 py-2"
       target="_blank"
       rel="noopener noreferrer"
     >
       {{ repoLabel }}
-      <OutboundLink />
     </a>
   </nav>
 </template>
@@ -133,9 +133,11 @@ export default {
   .nav-item
     position relative
     display inline-block
-    margin-left 1.5rem
+    margin-left 1rem
     line-height 2rem
-    &:first-child
+    &:first-child,
+    &:nth-last-of-type(2),
+    &:last-of-type
       margin-left 0
   .repo-link
     margin-left 1.5rem

@@ -97,3 +97,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.nav-link
+  padding-left 8px
+  padding-right 8px
+</style>

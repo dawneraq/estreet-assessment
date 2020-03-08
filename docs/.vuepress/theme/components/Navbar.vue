@@ -33,10 +33,6 @@
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
       <NavLinks class="can-hide" />
     </div>
-    
-    <a href="https://secure.ngpvan.com/vzmYqShz10Sf6bl63BQOJw2" id="donate-button">
-      DONATE
-    </a>
   </header>
 </template>
 
@@ -132,7 +128,7 @@ $navbar-horizontal-padding = 1.5rem
 @media (max-width: $MQMobile)
   .navbar
     padding-left 4rem
-    .can-hide
+    .can-hide > .nav-item
       display none
     .links
       padding-left 1.5rem

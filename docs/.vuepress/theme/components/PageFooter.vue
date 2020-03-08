@@ -79,7 +79,7 @@ footer#page-footer
     align-items center
     height 580px
     &:first-child
-      background lighten($accentColor, 10%)
+      background $primaryColor
     .logo
       width 100%
       height 90px
@@ -91,7 +91,6 @@ footer#page-footer
     #button-container
       max-width $leftContentWidth
       .btn
-        border none
         box-shadow 7px 7px 17px 0px rgba(0,0,0,.1)
         &:hover
           background-color $secondaryColor

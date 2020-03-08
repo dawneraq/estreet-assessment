@@ -1,8 +1,8 @@
 <template>
   <footer id="page-footer" class="row no-gutters">
-    <div class="col-12 col-md-4">
-      <img src="../../public/logo-white.png" alt="logo" class="logo">
-      <div class="button-container my-5">
+    <div class="col-12 col-md-4 px-4">
+      <div class="logo"></div>
+      <div class="button-container w-100 my-5">
         <a class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold">CONTRIBUTE</a>
         <a class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold">VOLUNTEER</a>
       </div>
@@ -24,7 +24,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-12 col-md-8 text-center">
+    <div class="col-12 col-md-8 px-5 text-center">
       <ul class="footer-nav list-inline mb-0">
         <li class="list-inline-item"><a href="/">Home</a></li>
         <li class="list-inline-item"><a href="/about/">Meet Cindy</a></li>
@@ -82,9 +82,15 @@ footer#page-footer
     &:first-child
       background lighten($accentColor, 10%)
     .logo
-      width $leftContentWidth
+      width 100%
+      height 90px
+      max-width $leftContentWidth
+      background-image url("/assets/img/logo-white.f7dc4559.png")
+      background-size contain
+      background-repeat no-repeat
+      background-position center
     .button-container
-      width $leftContentWidth
+      max-width $leftContentWidth
       .btn
         border none
         box-shadow 7px 7px 17px 0px rgba(0,0,0,.1)
@@ -109,6 +115,7 @@ footer#page-footer
     .disclaimer
       opacity 0.73
       border 3px solid rgba(255, 255, 255, 0.23)
+      max-width 350px
     .author-link
       opacity 0.3
 

@@ -93,6 +93,8 @@ footer#page-footer
         background-color lighten($accentColor, 70%)
       .btn-secondary
         background-color $accentColor
+    .social-media-links > li:not(:last-child)
+      margin-right 13px
     .footer-nav
       li
         margin-left calc(31px/2)

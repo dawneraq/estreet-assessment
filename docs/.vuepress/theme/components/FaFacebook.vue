@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="fontawesome-container">
     <font-awesome-icon :icon="theIcon"></font-awesome-icon>
   </span>
 </template>

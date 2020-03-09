@@ -20,8 +20,11 @@
     </div>
     <div
       v-if="heading === `It's Time for ACTION`"
-      id="cindy"
-    ></div>
+      class="h-100 w-100"
+    >
+      <div id="cindy"></div>
+      <div id="overlay" class="h-100 w-100 position-absolute"></div>
+    </div>
   </div>
 </template>
 
@@ -52,7 +55,6 @@ export default {
     height 565px
     margin-bottom -2rem
   // TODO At $MQMobile and smaller, wrap #signup-content into its own row
-  // TODO Add blue gradient on the right
   #signup-content
     width 370px
     z-index 1
@@ -73,4 +75,9 @@ export default {
     background-size contain
     background-repeat no-repeat
     background-position bottom
+  #overlay
+    top 0
+    left 0
+    background-image linear-gradient(110deg,rgba(0,0,0,0) 0%,$primaryColor 100%)
+    opacity .26
 </style>

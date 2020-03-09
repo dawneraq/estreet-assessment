@@ -38,15 +38,7 @@ title: Cindy Lerner for Miami-Dade County Commission
   </div>
 </div>
 
-<p class="lead">The Latest</p>
-
-## Follow Our Campaign
-
-TODO Insert press release here
-
-TODO Insert tweet here
-
-TODO Insert Facebook post here
+<CampaignMedia/>
 
 <NewsletterSignup v-slot:page-bottom
   heading="Get Involved"

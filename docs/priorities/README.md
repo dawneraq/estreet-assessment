@@ -1,7 +1,8 @@
----
-heroText: District Priorities
-tagline: I am running to address the issues that most impact our lives in Miami-Dade County.
----
+<HeroBanner v-slot:top
+  heading="District Priorities"
+  secondaryText="I am running to address the issues that most impact our lives in Miami-Dade County."
+  backgroundImage="https://static.wixstatic.com/media/5a3786_9220327f46494491bdef6533f3eb2a0c~mv2_d_2323_1236_s_2.png"
+/>
 
 TODO Turn these into cards with links
 

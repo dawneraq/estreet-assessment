@@ -1,6 +1,6 @@
----
-heroText: Endorsements
----
+<HeroBanner v-slot:top
+  heading="Endorsements"
+/>
 
 TODO Add picture of endorsers
 

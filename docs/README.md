@@ -17,7 +17,9 @@ title: Cindy Lerner for Miami-Dade County Commission
 - Mayor of Pinecrest
 - State Representative
 
-<a href="/about/" class="btn btn-lg btn-outline-primary">LEARN MORE →</a>
+<p>
+  <RouterLink :to="'/about/'" class="btn btn-lg btn-outline-primary">LEARN MORE →</RouterLink>
+</p>
 
 ## District Priorities
 
@@ -28,7 +30,9 @@ title: Cindy Lerner for Miami-Dade County Commission
 - Water Contamination
 - Failing Infrastructure
 
-<a href="/priorities/" class="btn btn-lg btn-light">LEARN MORE →</a>
+<p>
+  <RouterLink :to="'/priorities/'" class="btn btn-lg btn-light">LEARN MORE →</RouterLink>
+</p>
 
 <p class="lead">The Latest</p>
 

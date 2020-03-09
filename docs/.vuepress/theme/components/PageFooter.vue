@@ -3,8 +3,18 @@
     <div class="col-12 col-md-4 px-4">
       <div class="logo"></div>
       <div id="button-container" class="w-100 my-5">
-        <a class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold">CONTRIBUTE</a>
-        <a class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold">VOLUNTEER</a>
+        <a
+          href="https://secure.ngpvan.com/vzmYqShz10Sf6bl63BQOJw2"
+          class="btn btn-lg btn-block btn-primary mb-3 py-3 font-weight-bold"
+        >
+          CONTRIBUTE
+        </a>
+        <a
+          href="https://secure.ngpvan.com/2ZxFe8eFoU6k8Azuj2Icdw2"
+          class="btn btn-lg btn-block btn-secondary py-3 font-weight-bold"
+        >
+          VOLUNTEER
+        </a>
       </div>
       <ul id="social-media-links" class="list-inline">
         <li class="list-inline-item">
@@ -26,11 +36,11 @@
     </div>
     <div class="col-12 col-md-8 px-5 text-center">
       <ul id="footer-nav" class="list-inline mb-0">
-        <li class="list-inline-item"><a href="/">Home</a></li>
-        <li class="list-inline-item"><a href="/about/">Meet Cindy</a></li>
-        <li class="list-inline-item"><a href="/priorities/">Priorities</a></li>
-        <li class="list-inline-item"><a href="/contact/">Contact</a></li>
-        <li class="list-inline-item"><a href="/district/">District</a></li>
+        <li class="list-inline-item"><RouterLink :to="'/'">Home</RouterLink></li>
+        <li class="list-inline-item"><RouterLink :to="'/about/'">Meet Cindy</RouterLink></li>
+        <li class="list-inline-item"><RouterLink :to="'/priorities/'">Priorities</RouterLink></li>
+        <!-- TODO Add District page, with map from bottom of cindylerner.com/district-priorities -->
+        <!-- <li class="list-inline-item"><RouterLink :to="'/district/'">District</RouterLink></li> -->
       </ul>
       <ul id="contact-info" class="list-unstyled my-5">
         <li>

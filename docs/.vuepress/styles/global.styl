@@ -27,6 +27,7 @@ h1
 .btn
   border-radius 0
   font-weight bold
+  transition background-color 0s
   &:hover
     background $secondaryColor !important
     border-color $secondaryColor
@@ -40,6 +41,10 @@ h1
     background $primaryColor
   &.btn-light
     background $lightColor
+  &.btn-dark
+    background $darkColor
+a.btn:hover
+  text-decoration none !important
 
 .theme-default-content .btn-lg
   box-shadow 7px 7px 17px 0px rgba(0,0,0,.22)

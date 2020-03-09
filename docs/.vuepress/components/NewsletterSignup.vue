@@ -1,6 +1,6 @@
 <template>
   <div
-    class="newsletter-signup"
+    class="newsletter-signup position-relative"
     :style="style"
   >
     <div class="container h-100 d-flex align-items-center justify-content-end">
@@ -38,9 +38,6 @@ export default {
 </script>
 
 <style lang="stylus">
-$cindyWidth = 475px
-$heroImageHeight = 715px
-
 .newsletter-signup
   background-size cover
   background-repeat no-repeat
@@ -48,7 +45,7 @@ $heroImageHeight = 715px
   width 100%
   // slot="page-top"
   &:first-of-type
-    height $heroImageHeight
+    height 715px
     margin-top: 3rem
   // slot="page-bottom"
   &:last-of-type
@@ -67,13 +64,13 @@ $heroImageHeight = 715px
       height 60px
       margin-top 10px
   #cindy
-    height 100%
-    width $cindyWidth
+    height 95%
+    width 80%
     position absolute
-    // Cindy's PNG has a 505:651 aspect ratio
-    top "calc(%s - 651 * %s / 505 + %s)" % ($heroImageHeight $cindyWidth $navbarHeight)
-    left 20%
+    bottom 0
+    left 0
     background-image url("https://static.wixstatic.com/media/5a3786_cda77562733045a79b1c888c96ab6d3d~mv2.png")
     background-size contain
     background-repeat no-repeat
+    background-position bottom
 </style>

@@ -1,7 +1,8 @@
----
-heroText: Meet Cindy
-tagline: For Miami-Dade County Commission District 7
----
+<HeroBanner v-slot:top
+  heading="Meet Cindy"
+  secondaryText="For Miami-Dade County Commission District 7"
+  backgroundImage="https://static.wixstatic.com/media/5a3786_225fdfa6789a421abbb9e0aa5fe918d7~mv2.jpg"
+/>
 
 TODO Add images
 

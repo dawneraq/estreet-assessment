@@ -7,6 +7,8 @@ Every day drivers and users of transit in Miami-Dade experience anger and frustr
 
 I am committed to fighting for true transit expansion that would provide relief for all of District 7. During my term as Mayor of Pinecrest, I joined with other South Dade mayors, legislators and commissioners demanding the expansion of the Metrorail from Dadeland to Homestead, but our demands have still not been met. I am committed to continue that fight until it is realized. A true one ticket Metrorail ride would alleviate much of the traffic gridlock along US 1. Likewise, the Kendall community has not had any transit options even considered for the past two decades. County planning must incorporate and provide real transit and mobility options for Kendall.
 
+<ViewAllIssuesButton/>
+
 <NewsletterSignup v-slot:page-bottom
   heading="Get Involved"
   secondaryText="Stay Updated"

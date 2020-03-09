@@ -44,6 +44,8 @@ export default {
       line-height 1.25rem
       font-size 1.1em
       padding 0.5rem 0 0.5rem 1.5rem
+    .dropdown-wrapper
+      padding-left 4px
     #donate-button
       margin-left 20px
       margin-right 20px

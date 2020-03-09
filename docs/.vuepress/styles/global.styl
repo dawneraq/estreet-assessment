@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@900&display=swap')
+@import url('https://use.typekit.net/fqc2efx.css')
+
+$fallbackFonts = -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+
 // Override wrapper.styl since editing it doesn't work for some reason
 .theme-default-content:not(.custom)
   max-width none
@@ -12,17 +17,6 @@
 // Not sure how to override SCSS Bootstrap variables from Stylus, so here goes...
 .container
   max-width 919px
-
-h1
-  font-size 51px
-
-.lead
-  font-size 19px
-  letter-spacing 6px
-  text-transform uppercase
-
-.text-light
-  color: $lightColor !important
 
 .btn
   border-radius 0
@@ -43,6 +37,8 @@ h1
     background $lightColor
   &.btn-dark
     background $darkColor
+  &.btn-lg
+    padding-top 0.7rem
 a.btn:hover
   text-decoration none !important
 
@@ -81,3 +77,39 @@ input
 .about-images
   max-width 884px
   
+// Typography
+body
+  font-family Open Sans, $fallbackFonts
+  font-size 18px
+  color #7a7a7a
+h1,
+h2,
+h3,
+.nav-item,
+.btn,
+.social-media-post-card p,
+#footer-nav,
+#author-link
+  font-family maple-web, Work Sans, $fallbackFonts
+h1
+  font-size 51px
+h2
+  font-size 40px
+  border-bottom none
+  color #515151
+h3
+  margin-bottom 1rem !important
+.lead
+  font-family alternate-gothic-no-3-d, $fallbackFonts
+  font-size 19px
+  letter-spacing 6px
+  text-transform uppercase
+.text-light
+  color $lightColor !important
+.nav-item,
+.nav-item a
+  color $primaryColor
+  &.router-link-active
+    color $accentColor
+.social-media-post-card p
+  font-size 22px

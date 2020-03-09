@@ -8,7 +8,8 @@ title: Cindy Lerner for Miami-Dade County Commission
   backgroundImage="https://static.wixstatic.com/media/nsplsh_32746967496c3654743745~mv2_d_7769_2696_s_4_2.jpg"
 />
 
-<div id="home-callout-1">
+<div id="home-callout-1" class="d-flex justify-content-center align-items-center">
+  <div class="content">
 
   ## Meet Cindy Lerner
 
@@ -20,6 +21,7 @@ title: Cindy Lerner for Miami-Dade County Commission
   - State Representative
 
   <RouterLink :to="'/about/'" class="btn btn-lg btn-outline-primary">LEARN MORE →</RouterLink>
+  </div>
 </div>
 
 <div id="home-callout-2" class="row no-gutters">

@@ -104,7 +104,9 @@ $ctaButtonsHeight = 78px
       box-shadow -2px 5px 26px 0px rgba(0,0,0,.14)
       .btn
         box-shadow none
-        height $ctaButtonsHeight
+        // height $ctaButtonsHeight
+        padding-top 20px
+        padding-bottom 20px
         display flex
         align-items center
         justify-content center

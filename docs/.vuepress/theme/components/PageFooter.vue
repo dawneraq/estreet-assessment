@@ -53,7 +53,7 @@
       <span id="disclaimer" class="px-4 py-2">
         POLITICAL ADVERTISEMENT PAID FOR AND APPROVED BY CINDY LERNER FOR COUNTY COMMISSION DISTRICT 7
       </span>
-      <a href="https://dawneraq.github.io" id="author-link" class="mt-5">
+      <a href="https://dawneraq.github.io" id="author-link" class="mt-5 text-decoration-none">
         Website by Andrew Aquino
       </a>
     </div>
@@ -110,8 +110,8 @@ footer#page-footer
       margin-right 13px
     .fontawesome-container
       // Setting width and height doesn't work for some reason, so resort to this hacky solution
-      padding-top 10px
-      padding-bottom 10px
+      padding-top 8px
+      padding-bottom 8px
       padding-left 12px
       padding-right 12px
       border-radius 50%
@@ -132,6 +132,7 @@ footer#page-footer
       max-width 350px
     #author-link
       opacity 0.3
+      text-transform uppercase
   a:not(.btn)
     color white
     opacity 0.76

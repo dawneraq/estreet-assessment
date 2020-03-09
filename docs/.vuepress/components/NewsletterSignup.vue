@@ -33,11 +33,11 @@ export default {
   background-repeat no-repeat
   background-position center
   width 100%
-  position absolute
-  left 0
+  // slot="page-top"
   &:first-of-type
-    top 0
     height 715px
+    margin-top: 3rem
+  // slot="page-bottom"
   &:last-of-type
     height 565px
 </style>

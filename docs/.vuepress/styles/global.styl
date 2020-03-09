@@ -1,3 +1,14 @@
+// Override wrapper.styl since editing it doesn't work for some reason
+.theme-default-content:not(.custom)
+  max-width none
+  padding 0
+  > *:not(.newsletter-signup)
+    max-width $contentWidth
+    margin-left auto
+    margin-right auto
+    padding-left 2.5rem
+    padding-right 2.5rem
+
 .text-light
   color: $lightColor
 

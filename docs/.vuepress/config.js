@@ -3,7 +3,7 @@ module.exports = {
   // title: 'Cindy Lerner for Miami-Dade County Commission',
   themeConfig: {
     search: false,
-    logo: 'logo-blue.png',
+    logo: '/logo-blue.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Meet Cindy', link: '/about/' },

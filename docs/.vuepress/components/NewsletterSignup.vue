@@ -3,7 +3,7 @@
     class="newsletter-signup"
     :style="style"
   >
-    <div class="container h-100 d-flex align-items-center">
+    <div class="container h-100 d-flex align-items-center justify-content-end">
       <div id="signup-content" class="text-center">
         <p class="lead text-light">{{ secondaryText }}</p>
         <h1 class="text-white mb-3">{{ heading }}</h1>
@@ -18,6 +18,10 @@
         </form>
       </div>
     </div>
+    <div
+      v-if="heading === `It's Time for ACTION`"
+      id="cindy"
+    ></div>
   </div>
 </template>
 
@@ -34,6 +38,9 @@ export default {
 </script>
 
 <style lang="stylus">
+$cindyWidth = 475px
+$heroImageHeight = 715px
+
 .newsletter-signup
   background-size cover
   background-repeat no-repeat
@@ -41,14 +48,17 @@ export default {
   width 100%
   // slot="page-top"
   &:first-of-type
-    height 715px
+    height $heroImageHeight
     margin-top: 3rem
   // slot="page-bottom"
   &:last-of-type
     height 565px
     margin-bottom -2rem
+  // TODO At $MQMobile and smaller, wrap #signup-content into its own row
+  // TODO Add blue gradient on the right
   #signup-content
     width 370px
+    z-index 1
     input
       width 50%
       &:not(:last-child)
@@ -56,4 +66,14 @@ export default {
     button
       height 60px
       margin-top 10px
+  #cindy
+    height 100%
+    width $cindyWidth
+    position absolute
+    // Cindy's PNG has a 505:651 aspect ratio
+    top "calc(%s - 651 * %s / 505 + %s)" % ($heroImageHeight $cindyWidth $navbarHeight)
+    left 20%
+    background-image url("https://static.wixstatic.com/media/5a3786_cda77562733045a79b1c888c96ab6d3d~mv2.png")
+    background-size contain
+    background-repeat no-repeat
 </style>

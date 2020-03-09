@@ -40,4 +40,5 @@ export default {
   // slot="page-bottom"
   &:last-of-type
     height 565px
+    margin-bottom -2rem
 </style>

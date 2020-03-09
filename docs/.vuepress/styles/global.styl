@@ -2,7 +2,7 @@
 .theme-default-content:not(.custom)
   max-width none
   padding 0
-  > *:not(.newsletter-signup):not(.hero-banner)
+  > *:not(.newsletter-signup):not(.hero-banner):not(#home-callout-2)
     max-width $contentWidth
     margin-left auto
     margin-right auto
@@ -55,3 +55,15 @@ input
   padding-right 10px
   padding-top 17px
   border none
+
+#home-callout-1
+  margin-top 10rem
+  margin-bottom 5rem
+#home-callout-2
+  height 622px
+  > .col
+    &:first-child
+      background-image url("https://static.wixstatic.com/media/5a3786_8290f97988ba406dbb29c007eb77e00c~mv2_d_4032_2520_s_4_2.jpg")
+      background-size cover
+    &:last-child
+      background $primaryColor

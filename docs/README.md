@@ -28,7 +28,7 @@ title: Cindy Lerner for Miami-Dade County Commission
   <div class="col"></div>
   <div class="col d-flex justify-content-center align-items-center">
     <div class="text-white">
-      <h2>District Priorities</h2>
+      <h2 class="text-white">District Priorities</h2>
       <ul>
         <li>Traffic Gridlock</li>
         <li>Flooding & Rising Seas</li>

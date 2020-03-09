@@ -1,7 +1,7 @@
 <template>
   <div
     class="hero-banner w-100 d-flex"
-    v-bind:class="{ 'about': heading === 'Meet Cindy', 'has-image': backgroundImage }"
+    v-bind:class="{ 'about': heading === 'Meet Cindy', 'has-image': backgroundImage, 'has-overlay': heading === 'District Priorities' }"
     :style="style"
   >
     <div class="content ml-4 mb-4">
@@ -44,6 +44,13 @@ export default {
     background-size: cover;
   &.about
     background-position-y 20%
+  &.has-overlay::after
+    content " "
+    position absolute
+    background-image linear-gradient(0deg, $primaryColor 10%, rgba(0,0,0,0))
+    width 100%
+    height 100%
   .content
     width 480px
+    z-index 1
 </style>

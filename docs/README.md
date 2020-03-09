@@ -1,9 +1,12 @@
 ---
-home: true
 title: Cindy Lerner for Miami-Dade County Commission
-heroText: It's Time for Action
-tagline: Get Involved
 ---
+
+<NewsletterSignup
+  heading="It's Time for ACTION"
+  secondaryText="Get Involved"
+  backgroundImage="https://static.wixstatic.com/media/nsplsh_32746967496c3654743745~mv2_d_7769_2696_s_4_2.jpg"
+/>
 
 ## Meet Cindy Lerner
 
@@ -36,3 +39,9 @@ TODO Insert press release here
 TODO Insert tweet here
 
 TODO Insert Facebook post here
+
+<NewsletterSignup
+  heading="Get Involved"
+  secondaryText="Stay Updated"
+  backgroundImage="https://static.wixstatic.com/media/nsplsh_554e346373347a4e43596f~mv2_d_4033_2999_s_4_2.jpg"
+/>

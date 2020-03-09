@@ -18,11 +18,11 @@
         </form>
       </div>
     </div>
-    <div
-      v-if="heading === `It's Time for ACTION`"
-      class="h-100 w-100"
-    >
-      <div id="cindy"></div>
+    <div class="h-100 w-100">
+      <div
+        v-if="heading === `It's Time for ACTION`"
+        id="cindy"
+      ></div>
       <div id="overlay" class="h-100 w-100 position-absolute"></div>
     </div>
   </div>
@@ -79,5 +79,5 @@ export default {
     top 0
     left 0
     background-image linear-gradient(110deg,rgba(0,0,0,0) 0%,$primaryColor 100%)
-    opacity .26
+    opacity .7
 </style>

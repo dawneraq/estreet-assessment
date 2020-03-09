@@ -9,7 +9,11 @@
       :aria-label="dropdownAriaLabel"
       @click="setOpen(!open)"
     >
-      <span class="title">{{ item.text }}</span>
+      <!-- TODO Don't hardcode the path -->
+      <RouterLink
+        :to="'/priorities/'"
+        class="title text-decoration-none"
+      >{{ item.text }}</RouterLink>
       <span
         class="arrow"
         :class="open ? 'down' : 'right'"

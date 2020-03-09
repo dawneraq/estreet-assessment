@@ -1,6 +1,7 @@
 <template>
   <div
     class="newsletter-signup position-relative"
+    v-bind:class="{ 'top-signup': isTopSignup }"
     :style="style"
   >
     <div class="container h-100 d-flex align-items-center justify-content-end">
@@ -21,12 +22,12 @@
     <div class="background-images h-100 w-100 position-absolute">
       <div class="overlay h-100 w-100 position-absolute"></div>
       <div
-        v-if="heading === `It's Time for ACTION`"
+        v-if="isTopSignup"
         class="cindy"
       ></div>
     </div>
     <div
-      v-if="heading === `It's Time for ACTION`"
+      v-if="isTopSignup"
       class="button-row w-100 row no-gutters"
     >
       <div class="btn-group col-8">
@@ -45,6 +46,9 @@ export default {
   computed: {
     style() {
       return 'background-image: url(' + this.backgroundImage + ')';
+    },
+    isTopSignup() {
+      return this.heading === `It's Time for ACTION`;
     }
   }
 }
@@ -67,6 +71,8 @@ $ctaButtonsHeight = 78px
     height 565px
     margin-bottom -2rem
   // TODO At $MQMobile and smaller, wrap #signup-content into its own row
+  &:not(.top-signup)
+    margin-top 7rem
   .signup-content
     width 370px
     z-index 1
